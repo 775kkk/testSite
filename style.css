@@ -1,4 +1,3 @@
-/* Общие стили */
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -57,6 +56,17 @@ html, body {
     height: 100vh;
     overflow: hidden;
     z-index: 1;
+}.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, 
+                rgba(11,29,38,0.1) 0%, 
+                rgba(11,29,38,0.4) 100%);
+    z-index: 1;
 }
 
 .parallax__images, .images-parallax_item {
@@ -72,15 +82,33 @@ html, body {
     height: 100%;
     left: 0;
 }
-
+.size150{
+    scale: 1.3;
+}
 .nav-section {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 0 50px;
     z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
 }
 
+._container{
+    /*  wrapper*/ 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+.mrgTop20px{
+    margin-top: 120px;
+}
+.justCenter{
+    justify-content: center;
+}
 .content-section {
     color: white;
     padding: 150px 100px;
@@ -98,8 +126,11 @@ html, body {
 }
 
 .side-text {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    writing-mode: vertical-lr;
     position: fixed;
     left: 40px;
     top: 30%;
@@ -141,6 +172,59 @@ footer::before {
     height: 300px;
     transform: translateY(-100%);
     background: linear-gradient(180deg, rgba(11,29,35,0) 5%, #0B1D26 100%);
+}
+.fs_big{
+    font-size: 400%;
+}
+.colorYellow{
+    color: #ffdd44;
+}
+.zagolovok_s_chertoy_brighter{
+    color: #ffdd44;
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 6px;
+    margin: 0px 0px 30px 0px;
+    align-items: center;
+}
+.zagolovok_s_chertoy_brighter::before{
+    flex: 0 0 70px;
+    content: "";
+    margin: 0px 30px 0px 0px;
+    background-color: #ffdd44;
+    height: 1px;
+}
+.zagolovok_s_chertoy{
+    display: flex;
+    font-size: 10px !important;
+    letter-spacing: 6px;
+    margin: 0px 0px 30px 0px;
+    align-items: center;
+}
+.zagolovok_s_chertoy::before{
+    flex: 0 0 70px;
+    content: "";
+    margin: 0px 30px 0px 0px;
+    background-color: #fdb784;
+    height: 1px;
+}
+
+.ft-fm_Montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ft-fm_Playfar-display {
+    font-family: 'Playfair Display', serif;
+}
+.normal-text {
+    font-style: normal !important;
+    font-weight: 400 !important;
+}
+.font-style_italic{
+    font-style: italic;
+}
+.font-weight_800{
+    font-weight: 800;
 }
 
 /* Адаптивность */
@@ -185,6 +269,7 @@ footer::before {
 
 .nav-link {
     transition: opacity 0.3s ease;
+    font-size: 20px;
 }
 
 .nav-link:hover {
@@ -204,5 +289,99 @@ footer::before {
 @media (max-width: 992px) {
     .display-1 {
         font-size: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ыыыыыыыыыыыы */
+.progress-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.progress-line {
+    position: absolute;
+    right: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+.progress-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.progress-nav a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+    padding-right: 25px;
+}
+
+.progress-nav li.active a {
+    color: #FDB784;
+}
+
+.progress-nav li.active a::after {
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 2px;
+    background: #FDB784;
+}
+
+.progress-nav a:hover {
+    color: #FDB784;
+}
+.progress-line {
+    transition: height 0.3s ease-out;
+}
+@media (max-width: 768px) {
+    .progress-nav {
+        right: 10px;
+    }
+    .progress-nav a {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-height: 740px ) {
+    .mrgTop20px{
+        margin-top: 5px;
+    }
+}
+@media(max-width: 900px){
+    .zagolovok_s_chertoy_brighter{
+        scale: 2;
     }
 }

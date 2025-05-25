@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MNTN Layout</title>
+    <title>index1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+    <!---->
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <!-- Hero Section с параллаксом -->
-    <section class="hero-section">
+    <section id="start" class="hero-section ">
         <!-- Параллакс-слои -->
         <div class="parallax__images">
             <div class="images-parallax_item"> 
@@ -27,51 +32,56 @@
         <!-- Навигация из bebbeindex.html -->
         <nav class="nav-section navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand text-white fs-3" href="#">MNTN</a>
-                <div class="d-flex">
+                <a class="navbar-brand text-white fs-3 ft-fm_Playfar-display normal-text size150" href="#">MNTN</a>
+                <div class="d-flex">  
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item mx-3"><a class="nav-link text-white" href="#">Equipment</a></li>
-                        <li class="nav-item mx-3"><a class="nav-link text-white" href="#">About us</a></li>
-                        <li class="nav-item mx-3"><a class="nav-link text-white" href="#">Blog</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="#">Equipment</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="#">About us</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="#">Blog</a></li>
                     </ul>
+                </div>
+                <div>
+                    
+                    <a class="navbar-brand text-white fs-3" href="#"><img src="cart.png" class="size150" alt=""> Account</a>
                 </div>
             </div>
         </nav>
 
         <!-- Основной контент -->
         <div class="content-section">
-            <div class="row align-items-center">
+            <div class="row align-items-center justCenter mrgTop20px">
                 <div class="col-md-6">
-                    <h3 class="text-warning mb-4">A HIKING GUIDE</h3>
-                    <h1 class="display-1 mb-4">Be Prepared For The Mountains And Beyond!</h1>
-                    <a href="#content" class="text-white arrow-link">scroll down ↓</a>
+                    <h3 class="mb-4 zagolovok_s_chertoy_brighter ft-fm_Montserrat font-weight_800">A HIKING GUIDE</h3>
+                    <h1 class="display-1 mb-4 ft-fm_Playfar-display normal-text">Be Prepared For The Mountains And Beyond!</h1>
+                    <a href="#content" style="font-size: 20px;" class="text-white arrow-link text-decoration-none  ft-fm_Montserrat font-weight_800">scroll down ↓</a>
                 </div>
             </div>
         </div>
 
         <!-- Социальные ссылки -->
-        <div class="side-text">
-            <span class="me-4">Follow us</span>
-            <a href="#" class="text-white me-3">IG</a>
-            <a href="#" class="text-white">TW</a>
+        <div class="side-text ft-fm_Montserrat font-weight_800">
+            <span style="display: flex; justify-content: center; align-items: center;">
+                <p>Follow us</p>
+                <a href="#" style="scale: 0.5;"><img src="inst.png" alt="inst"></a>
+                <a href="#" style="scale: 0.5;"><img src="tw.png" alt="tw"></a>
+            </span>
         </div>
-
         <!-- Градиентный оверлей -->
         <div class="gradient-overlay"></div>
     </section>
 
     <!-- Остальной контент из bebbeindex.html -->
-    <section id="content" class="py-5 bg-baza text-white">
-        <div class="container">
+    <section id="section1"  class="py-5 bg-baza text-white">
+        <div class="container ">
             <!-- Section 1 -->
             <div class="row py-5 align-items-center position-relative">
                 <div class="col-md-6 content-card">
                     <!-- Номер секции как изображение -->
-                    <img src="Equipment.png" alt="01" class="section-number img-fluid">
-                    <span class="text-warning">GET STARTED</span>
-                    <h2 class="my-4">What level of hiker are you?</h2>
-                    <p>Determining your hiking experience level can help us recommend hikes that match your skills. Our hiking quiz will place you in one of three categories:</p>
-                    <a href="#" class="text-warning text-decoration-none">read more →</a>
+                    <img  src="Equipment.png" alt="01" class="section-number img-fluid">
+                    <span class=" zagolovok_s_chertoy_brighter ft-fm_Montserrat font-weight_800">GET STARTED</span>
+                    <h1 class="my-4 ft-fm_Playfar-display normal-text fs_big" >What level of hiker are you?</h1>
+                    <p class="ft-fm_Montserrat font-weight_800">Determining your hiking experience level can help us recommend hikes that match your skills. Our hiking quiz will place you in one of three categories:</p>
+                    <a href="#" class="text-decoration-none ft-fm_Montserrat font-weight_800 colorYellow">read more →</a>
                 </div>
                 <div class="col-md-6">
                     <img src="01.png" alt="Hiker" class="img-fluid rounded">
@@ -79,14 +89,14 @@
             </div>
 
             <!-- Section 2 -->
-            <div class="row py-5 align-items-center position-relative">
+            <div id="section2" class="row py-5 align-items-center position-relative">
                 <div class="col-md-6 order-md-2 content-card">
                     <!-- Номер секции как изображение -->
-                    <img src="Equipment2.png" alt="02" class="section-number img-fluid">
-                    <span class="text-warning">HIKING ESSENTIALS</span>
-                    <h2 class="my-4">Picking the right Hiking Gear!</h2>
-                    <p>The nice thing about beginning hiking is that you don't really need any special gear, you can probably get away with things you already have.</p>
-                    <a href="#" class="text-warning text-decoration-none">read more →</a>
+                    <img src="Equipment2.png"  alt="02" class="section-number img-fluid">
+                    <span class=" zagolovok_s_chertoy_brighter ft-fm_Montserrat font-weight_800 tempsize">HIKING ESSENTIALS</span>
+                    <h1 class="my-4 ft-fm_Playfar-display normal-text fs_big">Picking the right Hiking Gear!</h1>
+                    <p class="ft-fm_Montserrat font-weight_800">The nice thing about beginning hiking is that you don't really need any special gear, you can probably get away with things you already have.</p>
+                    <a href="#" class="text-decoration-none ft-fm_Montserrat font-weight_800 colorYellow">read more →</a>
                 </div>
                 <div class="col-md-6 order-md-1">
                     <img src="01 (1).png" alt="Hiking Gear" class="img-fluid rounded">
@@ -94,14 +104,14 @@
             </div>
 
             <!-- Section 3 (новая секция) -->
-            <div class="row py-5 align-items-center position-relative">
+            <div  id="section3" class="row py-5 align-items-center position-relative">
                 <div class="col-md-6 content-card">
                     <!-- Номер секции как изображение -->
-                    <img src="Equipment3.png" alt="03" class="section-number img-fluid">
-                    <span class="text-warning">WHERE YOU GO IS THE KEY</span>
-                    <h2 class="my-4">Understand Your Map & Timing</h2>
-                    <p>To start, print out the hiking guide and map. If it's raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect.</p>
-                    <a href="#" class="text-warning text-decoration-none">read more →</a>
+                    <img src="Equipment3.png"  alt="03" class="section-number img-fluid">
+                    <span class="zagolovok_s_chertoy_brighter ft-fm_Montserrat font-weight_800 ">WHERE YOU GO IS THE KEY</span>
+                    <h1 class="my-4 ft-fm_Playfar-display normal-text fs_big">Understand Your Map & Timing</h1>
+                    <p class="ft-fm_Montserrat font-weight_800">To start, print out the hiking guide and map. If it's raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect.</p>
+                    <a href="#" class="text-decoration-none ft-fm_Montserrat font-weight_800 colorYellow">read more →</a>
                 </div>
                 <div class="col-md-6">
                     <img src="01 (2).png" alt="Map and Compass" class="img-fluid rounded">
@@ -111,17 +121,17 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="text-white py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="mb-4">MNTN</h3>
-                    <p>Get out there & discover your next slope, mountain & destination!</p>
-                    <p class="text-muted">Copyright 2023 MNTN, Inc. Terms & Privacy</p>
+                    <h3 class="mb-4 ft-fm_Playfar-display normal-text ">MNTN</h3>
+                    <p class="ft-fm_Montserrat font-weight_800">Get out there & discover your next slope, mountain & destination!</p>
+                    <p class="text-muted ft-fm_Montserrat font-weight_800">Copyright 2023 MNTN, Inc. Terms & Privacy</p>
                 </div>
                 <div class="col-md-3">
-                    <h4 class="mb-4">More on The Blog</h4>
-                    <ul class="list-unstyled">
+                    <h4 class="mb-4 ft-fm_Montserrat font-weight_800 colorYellow">More on The Blog</h4>
+                    <ul class="list-unstyled ft-fm_Montserrat ">
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none">About MNTN</a></li>
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contributors & Writers</a></li>
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none">Write For Us</a></li>
@@ -130,8 +140,8 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h4 class="mb-4">More on MNTN</h4>
-                    <ul class="list-unstyled">
+                    <h4 class="mb-4 ft-fm_Montserrat font-weight_800 colorYellow">More on MNTN</h4>
+                    <ul class="list-unstyled ft-fm_Montserrat ">
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none">The Team</a></li>
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none">Jobs</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Press</a></li>
@@ -141,7 +151,81 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="progress-nav">
+        <div class="progress-line"></div>
+        <ul>
+            <li class="active" data-target="start"><a href="#start">Start</a></li>
+            <li data-target="section1"><a href="#section1">01</a></li>
+            <li data-target="section2"><a href="#section2">02</a></li>
+            <li data-target="section3"><a href="#section3">03</a></li>
+        </ul>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navItems = document.querySelectorAll('.progress-nav li');
+        const progressLine = document.querySelector('.progress-line');
+        
+        // Получаем все элементы с ID, на которые ссылается навигация
+        const targets = Array.from(navItems).map(item => {
+            const targetId = item.getAttribute('data-target');
+            return document.getElementById(targetId);
+        }).filter(Boolean);
+        
+        function updateProgress() {
+            const scrollPosition = window.scrollY + window.innerHeight / 3;
+            
+            // Находим текущий активный элемент
+            let activeIndex = 0;
+            targets.forEach((target, index) => {
+                const targetTop = target.offsetTop;
+                const targetHeight = target.offsetHeight;
+                
+                if (scrollPosition >= targetTop) {
+                    activeIndex = index;
+                }
+            });
+            
+            // Обновляем активный пункт меню
+            navItems.forEach((item, index) => {
+                if (index === activeIndex) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Обновляем прогресс-линию
+            if (targets.length > 0) {
+                const firstTarget = targets[0];
+                const lastTarget = targets[targets.length - 1];
+                const totalHeight = lastTarget.offsetTop + lastTarget.offsetHeight - firstTarget.offsetTop;
+                const progress = ((scrollPosition - firstTarget.offsetTop) / totalHeight) * 100;
+                progressLine.style.height = `${Math.min(100, Math.max(0, progress))}%`;
+            }
+        }
+        
+        window.addEventListener('scroll', updateProgress);
+        window.addEventListener('resize', updateProgress);
+        updateProgress();
+        
+        // Плавная прокрутка
+        document.querySelectorAll('.progress-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+    </script>
 </body>
 </html>
