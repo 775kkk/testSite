@@ -120,6 +120,10 @@ html, body {
     background: linear-gradient(to top, #0B1D26, rgba(11,29,38,0));
     height: 40%;
     position: absolute;
+    left: 0;
+    right: 0; 
+    bottom: -5px;
+    width: 100%; 
     bottom: 0;
     width: 100%;
     z-index: 4;
@@ -292,7 +296,9 @@ footer::before {
     }
 }
 
-
+.hidden493{
+        padding-left: 6px;
+    }
 
 
 
@@ -377,7 +383,7 @@ footer::before {
 
 @media(max-height: 740px ) {
     .mrgTop20px{
-        margin-top: 5px;
+        margin-top: 120px;
     }
 }
 @media(max-width: 900px){
@@ -455,12 +461,67 @@ footer::before {
         scale: 0.85;
     }
 }
-/* @media (max-width: 672px) {
-    .media1{
-        margin-left: 0 !important;
+* Для экранов меньше 768px */
+@media (max-width: 767px) {
+    .nav-section .container-fluid {
+        flex-direction: column !important;
+        align-items: flex-start !important;
     }
-} */
+    
+    .nav-section .navbar-brand:first-child {
+        margin-bottom: 15px;
+    }
+    
+    .nav-section .d-flex {
+        margin-bottom: 15px;
+        width: 100%;
+        justify-content: flex-start !important;
+    }
+    
+    .nav-section .navbar-brand:last-child {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-section .navbar-brand img {
+        margin-right: 10px;
+    }
+}
 
+/* Для очень маленьких экранов (меньше 576px) */
+@media (max-width: 575px) {
+    .nav-section {
+        padding: 15px 20px !important;
+    }
+    
+    .nav-section .navbar-brand {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Специальные стили для кнопки Account */
+.account-link {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    .account-link {
+        margin-left: 0 !important;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 493px) {
+    .hidden493{
+        visibility: hidden;
+    }
+}
 @media (max-width: 767px) {
     .content-section .row {
         margin-left: 0;
@@ -579,6 +640,10 @@ footer::before {
     
     .side-text {
         display: none !important;
+    }
+    .content-card{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 

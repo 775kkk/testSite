@@ -31,21 +31,26 @@
 
         <!-- Навигация из bebbeindex.html -->
         <nav class="nav-section navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white fs-3 ft-fm_Playfar-display normal-text size150" href="#">MNTN</a>
-                <div class="d-flex">  
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="#">Equipment</a></li>
-                        <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="#">About us</a></li>
-                        <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="media1">
-                    
-                    <a class="navbar-brand text-white fs-3" href="#"><img src="cart.png" class="size150" alt=""> Account</a>
-                </div>
-            </div>
-        </nav>
+    <div class="container-fluid flex-column align-items-start">
+        <!-- Логотип -->
+        <a class="navbar-brand text-white fs-3 ft-fm_Playfar-display normal-text size150" href="#">MNTN</a>
+        
+        <!-- Центральное меню -->
+        <div class="d-flex w-100 justify-content-between align-items-center">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="#">Equipment</a></li>
+                <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="#">About</a></li>
+                <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="#">Blog</a></li>
+            </ul>
+            
+            <!-- Кнопка Account -->
+            <a class="navbar-brand text-white fs-3 account-link" href="#">
+                <img src="cart.png" class="size150" alt=""> 
+                <span class="hidden493">Account</span>
+            </a>
+        </div>
+    </div>
+</nav>
 
         <!-- Основной контент -->
         <div class="content-section">
