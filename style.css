@@ -382,6 +382,231 @@ footer::before {
 }
 @media(max-width: 900px){
     .zagolovok_s_chertoy_brighter{
-        scale: 2;
+        scale: 0.9;
+    }
+}
+@media(max-width: 300px){
+    .zagolovok_s_chertoy_brighter{
+        scale: 0.7;
+    }
+}
+
+
+
+
+@media (max-width: 1270px) {
+    .media2{
+        font-size: 55px;
+    }
+
+}
+
+
+/* Добавьте это в конец вашего style.css */
+
+/* Мобильная оптимизация */
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-item{
+        scale: 1.1;
+    }
+    .content-section {
+        padding: 100px 30px !important;
+    }
+    
+    .display-1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .fs_big {
+        font-size: 250% !important;
+    }
+    
+    .nav-section {
+        padding: 15px 20px !important;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+    
+    .nav-link {
+        font-size: 16px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    
+    .side-text {
+        left: 10px !important;
+        top: 25% !important;
+    }
+    
+    .side-text p {
+        font-size: 15px !important;
+    }
+    
+   
+}
+
+@media (max-width: 800px) {
+    .media1{
+        scale: 0.85;
+    }
+}
+/* @media (max-width: 672px) {
+    .media1{
+        margin-left: 0 !important;
+    }
+} */
+
+@media (max-width: 767px) {
+    .content-section .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .content-section .col-md-6 {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .content-section {
+        padding: 60px 15px !important;
+        text-align: center;
+    }
+    
+    .justCenter {
+        justify-content: center !important;
+    }
+    
+    /* Убедимся, что текст центрируется */
+    .zagolovok_s_chertoy_brighter {
+        justify-content: center !important;
+    }
+    
+    .zagolovok_s_chertoy_brighter::before {
+        margin-right: 15px !important;
+        margin-left: 15px !important;
+    }
+}
+@media (max-width: 868px) {
+   
+    .content-section {
+        padding: 80px 20px !important;
+    }
+
+    .zagolovok_s_chertoy_brighter {
+        font-size: 14px !important;
+        letter-spacing: 3px !important;
+    }
+    
+    .zagolovok_s_chertoy_brighter::before {
+        flex: 0 0 30px !important;
+        margin-right: 15px !important;
+    }
+    
+    .content-card {
+        padding-left: 0 !important;
+        margin-top: 30px !important;
+    }
+    
+    .section-number {
+        left: 0 !important;
+        top: -30px !important;
+        max-width: 80px !important;
+    }
+    
+    .progress-nav {
+        right: 10px !important;
+    }
+    
+    .progress-nav ul {
+        gap: 20px !important;
+    }
+    
+    .progress-nav a {
+        font-size: 14px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-section {
+        padding: 60px 15px !important;
+    }
+    
+    .display-1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .fs_big {
+        font-size: 180% !important;
+    }
+    
+    .nav-section {
+        flex-direction: column !important;
+        padding: 10px !important;
+    }
+    
+    .navbar-brand.text-white.fs-3 {
+        margin-bottom: 10px !important;
+    }
+    
+    .d-flex {
+        margin-bottom: 15px !important;
+    }
+    
+    .row.align-items-center.justCenter {
+        text-align: center !important;
+    }
+    
+    footer .row > div {
+        margin-bottom: 30px !important;
+    }
+    
+    .images-parallax_zemla {
+        background-position: 25% top !important;
+    }
+    
+    .progress-nav {
+        display: none !important;
+    }
+    
+    .side-text {
+        display: none !important;
+    }
+}
+
+/* Оптимизация для очень маленьких экранов */
+@media (max-width: 400px) {
+    .content-section {
+        padding: 40px 10px !important;
+    }
+    
+    .display-1 {
+        font-size: 1.5rem !important;
+    }
+    
+    .fs_big {
+        font-size: 150% !important;
+    }
+    
+    .arrow-link {
+        font-size: 16px !important;
+    }
+    
+    .nav-link {
+        font-size: 14px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    
+    .section-number {
+        max-width: 60px !important;
     }
 }
