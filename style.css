@@ -14,7 +14,6 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/* Параллакс-слои */
 .parallax__images {
     position: absolute;
     width: 120%;
@@ -35,22 +34,21 @@ html, body {
 .images-parallax_clouds {
     background: url('clouds.png') top / cover no-repeat;
     top: 0;
-    z-index: 1; /* Облака - нижний слой */
+    z-index: 1; 
 }
 
 .images-parallax_mountains {
     background: url('mountains.png') top / cover no-repeat;
     top: 15%;
-    z-index: 2; /* Горы - средний слой */
+    z-index: 2; 
 }
 
 .images-parallax_zemla {
     background: url('hills.png') top / cover no-repeat;
     top: 45%;
-    z-index: 3; /* Холмы - верхний слой */
+    z-index: 3; 
 }
 
-/* Стили для Hero Section */
 .hero-section {
     position: relative;
     height: 100vh;
@@ -142,7 +140,6 @@ html, body {
     z-index: 100;
 }
 
-/* Стили для контентных секций */
 .bg-baza {
     background: #0B1D26;
 }
@@ -231,7 +228,6 @@ footer::before {
     font-weight: 800;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
     .content-section {
         padding: 100px 30px;
@@ -265,7 +261,6 @@ footer::before {
     }
 }
 
-/* Bootstrap-кастомизация */
 .navbar-brand {
     font-weight: 700;
     letter-spacing: 2px;
@@ -299,12 +294,6 @@ footer::before {
 .hidden493{
         padding-left: 6px;
     }
-
-
-
-
-
-
 
 
 
@@ -407,10 +396,6 @@ footer::before {
 
 }
 
-
-/* Добавьте это в конец вашего style.css */
-
-/* Мобильная оптимизация */
 @media (max-width: 992px) {
     .navbar-nav {
         flex-direction: row;
@@ -461,7 +446,7 @@ footer::before {
         scale: 0.85;
     }
 }
-* Для экранов меньше 768px */
+
 @media (max-width: 767px) {
     .nav-section .container-fluid {
         flex-direction: column !important;
@@ -489,7 +474,6 @@ footer::before {
     }
 }
 
-/* Для очень маленьких экранов (меньше 576px) */
 @media (max-width: 575px) {
     .nav-section {
         padding: 15px 20px !important;
@@ -500,7 +484,6 @@ footer::before {
     }
 }
 
-/* Специальные стили для кнопки Account */
 .account-link {
     display: flex !important;
     align-items: center !important;
