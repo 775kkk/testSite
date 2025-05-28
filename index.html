@@ -14,9 +14,7 @@
     
 </head>
 <body>
-    <!-- Hero Section с параллаксом -->
     <section id="start" class="hero-section ">
-        <!-- Параллакс-слои -->
         <div class="parallax__images">
             <div class="images-parallax_item"> 
                 <div class="images-parallax_clouds"></div>
@@ -29,13 +27,10 @@
             </div>
         </div>
 
-        <!-- Навигация из bebbeindex.html -->
         <nav class="nav-section navbar navbar-expand-lg">
     <div class="container-fluid flex-column align-items-start">
-        <!-- Логотип -->
         <a class="navbar-brand text-white fs-3 ft-fm_Playfar-display normal-text size150" href="index22.html">MNTN</a>
         
-        <!-- Центральное меню -->
         <div class="d-flex w-100 justify-content-between align-items-center">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="index22.html">Equipment</a></li>
@@ -43,7 +38,6 @@
                 <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="index22.html">Blog</a></li>
             </ul>
             
-            <!-- Кнопка Account -->
             <a class="navbar-brand text-white fs-3 account-link" href="index22.html">
                 <img src="cart.png" class="size150" alt=""> 
                 <span class="hidden493">Account</span>
@@ -52,7 +46,6 @@
     </div>
 </nav>
 
-        <!-- Основной контент -->
         <div class="content-section">
             <div class="row align-items-center justCenter mrgTop20px">
                 <div class="col-md-6 col-12">
@@ -63,7 +56,6 @@
             </div>
         </div>
 
-        <!-- Социальные ссылки -->
         <div class="side-text ft-fm_Montserrat font-weight_800">
             <span style="display: flex; justify-content: center; align-items: center;">
                 <p>Follow us</p>
@@ -71,17 +63,14 @@
                 <a href="#" style="scale: 0.5;"><img src="tw.png" alt="tw"></a>
             </span>
         </div>
-        <!-- Градиентный оверлей -->
+
         <div class="gradient-overlay"></div>
     </section>
 
-    <!-- Остальной контент из bebbeindex.html -->
     <section id="section1"  class="py-5 bg-baza text-white">
         <div class="container ">
-            <!-- Section 1 -->
             <div class="row py-5 align-items-center position-relative">
                 <div class="col-md-6 content-card">
-                    <!-- Номер секции как изображение -->
                     <img  src="Equipment.png" alt="01" class="section-number img-fluid">
                     <span class=" zagolovok_s_chertoy_brighter ft-fm_Montserrat font-weight_800">GET STARTED</span>
                     <h1 class="my-4 ft-fm_Playfar-display normal-text fs_big" >What level of hiker are you?</h1>
@@ -93,10 +82,8 @@
                 </div>
             </div>
 
-            <!-- Section 2 -->
             <div id="section2" class="row py-5 align-items-center position-relative">
                 <div class="col-md-6 order-md-2 content-card">
-                    <!-- Номер секции как изображение -->
                     <img src="Equipment2.png"  alt="02" class="section-number img-fluid">
                     <span class=" zagolovok_s_chertoy_brighter ft-fm_Montserrat font-weight_800 tempsize">HIKING ESSENTIALS</span>
                     <h1 class="my-4 ft-fm_Playfar-display normal-text fs_big">Picking the right Hiking Gear!</h1>
@@ -108,10 +95,8 @@
                 </div>
             </div>
 
-            <!-- Section 3 (новая секция) -->
             <div  id="section3" class="row py-5 align-items-center position-relative">
                 <div class="col-md-6 content-card">
-                    <!-- Номер секции как изображение -->
                     <img src="Equipment3.png"  alt="03" class="section-number img-fluid">
                     <span class="zagolovok_s_chertoy_brighter ft-fm_Montserrat font-weight_800 ">WHERE YOU GO IS THE KEY</span>
                     <h1 class="my-4 ft-fm_Playfar-display normal-text fs_big">Understand Your Map & Timing</h1>
@@ -125,7 +110,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="text-white py-5">
         <div class="container">
             <div class="row">
@@ -171,8 +155,6 @@
     document.addEventListener('DOMContentLoaded', function() {
         const navItems = document.querySelectorAll('.progress-nav li');
         const progressLine = document.querySelector('.progress-line');
-        
-        // Получаем все элементы с ID, на которые ссылается навигация
         const targets = Array.from(navItems).map(item => {
             const targetId = item.getAttribute('data-target');
             return document.getElementById(targetId);
@@ -180,8 +162,6 @@
         
         function updateProgress() {
             const scrollPosition = window.scrollY + window.innerHeight / 3;
-            
-            // Находим текущий активный элемент
             let activeIndex = 0;
             targets.forEach((target, index) => {
                 const targetTop = target.offsetTop;
@@ -191,8 +171,6 @@
                     activeIndex = index;
                 }
             });
-            
-            // Обновляем активный пункт меню
             navItems.forEach((item, index) => {
                 if (index === activeIndex) {
                     item.classList.add('active');
@@ -200,8 +178,6 @@
                     item.classList.remove('active');
                 }
             });
-            
-            // Обновляем прогресс-линию
             if (targets.length > 0) {
                 const firstTarget = targets[0];
                 const lastTarget = targets[targets.length - 1];
@@ -215,7 +191,6 @@
         window.addEventListener('resize', updateProgress);
         updateProgress();
         
-        // Плавная прокрутка
         document.querySelectorAll('.progress-nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
