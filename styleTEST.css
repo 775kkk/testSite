@@ -1,13 +1,12 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  color: #fff !important;
   background: url('gora_solar.png') no-repeat center center fixed;
   background-size: cover;
   transition: background 0.3s ease;
 }
 body.dark {
-  color: #ccc;
   background-image: url('gora_night.png');
 }
 .quiz-wrapper {
@@ -24,7 +23,6 @@ body.dark {
 }
 .btn-highlight {
   background: #FFDD44;
-  color: #000;
   border: none;
   padding: 10px 20px;
   font-weight: bold;
@@ -41,6 +39,7 @@ body.dark {
 .theme-toggle img {
   width: 32px;
   height: 32px;
+  object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s ease;
 }

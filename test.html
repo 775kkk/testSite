@@ -18,7 +18,7 @@
   <main class="quiz-wrapper">
     <h1 id="quiz-heading">Проверьте свои навыки!</h1>
     <div id="quiz-container">
-      <!-- Вопросы появятся здесь динамически -->
+      <!--вопросы появятся здесь-->
     </div>
     <div id="quiz-actions" class="hidden">
       <button class="btn-highlight" onclick="finishQuiz()">Завершить тест</button>
@@ -32,7 +32,7 @@
     function setTheme(theme) {
       document.body.className = theme;
       localStorage.setItem("theme", theme);
-      themeIcon.src = theme === "dark" ? "solar.webp" : "moon.jpg";
+      themeIcon.src = theme === "dark" ? "solar.png" : "moon.png";
     }
 
     function toggleTheme() {
