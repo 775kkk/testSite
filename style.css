@@ -157,7 +157,6 @@ html, body {
     padding-left: 100px;
 }
 
-/* Футер */
 footer {
     background-color: #0B1D26;
     position: relative;
@@ -228,39 +227,6 @@ footer::before {
     font-weight: 800;
 }
 
-@media (max-width: 768px) {
-    .content-section {
-        padding: 100px 30px;
-    }
-    
-    .content-card {
-        padding-left: 0;
-        margin-top: 50px;
-    }
-    
-    .section-number {
-        left: 0;
-        top: -50px;
-        font-size: 120px;
-    }
-    
-    .side-text {
-        left: 20px;
-    }
-}
-
-@media (max-aspect-ratio: 3/2) {
-    .images-parallax_zemla {
-        background-position: 20% top;
-    }
-}
-
-@media (max-width: 479px) {
-    .parallax__title {
-        font-size: 36px;
-    }
-}
-
 .navbar-brand {
     font-weight: 700;
     letter-spacing: 2px;
@@ -285,19 +251,10 @@ footer::before {
     line-height: 1.1;
 }
 
-@media (max-width: 992px) {
-    .display-1 {
-        font-size: 3rem;
-    }
-}
-
 .hidden493{
         padding-left: 6px;
     }
 
-
-
-/* ыыыыыыыыыыыы */
 .progress-nav {
     position: fixed;
     right: 20px;
@@ -360,33 +317,13 @@ footer::before {
 .progress-line {
     transition: height 0.3s ease-out;
 }
-@media (max-width: 768px) {
-    .progress-nav {
-        right: 10px;
-    }
-    .progress-nav a {
-        font-size: 14px;
-        padding-right: 20px;
-    }
-}
 
-@media(max-height: 740px ) {
-    .mrgTop20px{
-        margin-top: 120px;
-    }
+.account-link {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    white-space: nowrap;
 }
-@media(max-width: 900px){
-    .zagolovok_s_chertoy_brighter{
-        scale: 0.9;
-    }
-}
-@media(max-width: 300px){
-    .zagolovok_s_chertoy_brighter{
-        scale: 0.7;
-    }
-}
-
-
 
 
 @media (max-width: 1270px) {
@@ -394,6 +331,12 @@ footer::before {
         font-size: 55px;
     }
 
+}
+
+@media (max-width: 992px) {
+    .display-1 {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 992px) {
@@ -441,103 +384,12 @@ footer::before {
    
 }
 
-@media (max-width: 800px) {
-    .media1{
-        scale: 0.85;
+@media(max-width: 900px){
+    .zagolovok_s_chertoy_brighter{
+        scale: 0.9;
     }
 }
 
-@media (max-width: 767px) {
-    .nav-section .container-fluid {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-    }
-    
-    .nav-section .navbar-brand:first-child {
-        margin-bottom: 15px;
-    }
-    
-    .nav-section .d-flex {
-        margin-bottom: 15px;
-        width: 100%;
-        justify-content: flex-start !important;
-    }
-    
-    .nav-section .navbar-brand:last-child {
-        margin-left: 0;
-        display: flex;
-        align-items: center;
-    }
-    
-    .nav-section .navbar-brand img {
-        margin-right: 10px;
-    }
-}
-
-@media (max-width: 575px) {
-    .nav-section {
-        padding: 15px 20px !important;
-    }
-    
-    .nav-section .navbar-brand {
-        font-size: 1.2rem !important;
-    }
-}
-
-.account-link {
-    display: flex !important;
-    align-items: center !important;
-    margin-left: auto !important;
-    white-space: nowrap;
-}
-
-@media (max-width: 767px) {
-    .account-link {
-        margin-left: 0 !important;
-        padding-top: 10px;
-        border-top: 1px solid rgba(255,255,255,0.1);
-        width: 100%;
-        justify-content: flex-end;
-    }
-}
-@media (max-width: 493px) {
-    .hidden493{
-        visibility: hidden;
-    }
-}
-@media (max-width: 767px) {
-    .content-section .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .content-section .col-md-6 {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    
-    .content-section {
-        padding: 60px 15px !important;
-        text-align: center;
-    }
-    
-    .justCenter {
-        justify-content: center !important;
-    }
-    
-    /* Убедимся, что текст центрируется */
-    .zagolovok_s_chertoy_brighter {
-        justify-content: center !important;
-    }
-    
-    .zagolovok_s_chertoy_brighter::before {
-        margin-right: 15px !important;
-        margin-left: 15px !important;
-    }
-}
 @media (max-width: 868px) {
    
     .content-section {
@@ -576,6 +428,120 @@ footer::before {
     .progress-nav a {
         font-size: 14px !important;
         padding-right: 15px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .media1{
+        scale: 0.85;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        padding: 100px 30px;
+    }
+    
+    .content-card {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    
+    .section-number {
+        left: 0;
+        top: -50px;
+        font-size: 120px;
+    }
+    
+    .side-text {
+        left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .progress-nav {
+        right: 10px;
+    }
+    .progress-nav a {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-section .container-fluid {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    
+    .nav-section .navbar-brand:first-child {
+        margin-bottom: 15px;
+    }
+    
+    .nav-section .d-flex {
+        margin-bottom: 15px;
+        width: 100%;
+        justify-content: flex-start !important;
+    }
+    
+    .nav-section .navbar-brand:last-child {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-section .navbar-brand img {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .account-link {
+        margin-left: 0 !important;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 767px) {
+    .content-section .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .content-section .col-md-6 {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .content-section {
+        padding: 60px 15px !important;
+        text-align: center;
+    }
+    
+    .justCenter {
+        justify-content: center !important;
+    }
+    
+    /* Убедимся, что текст центрируется */
+    .zagolovok_s_chertoy_brighter {
+        justify-content: center !important;
+    }
+    
+    .zagolovok_s_chertoy_brighter::before {
+        margin-right: 15px !important;
+        margin-left: 15px !important;
+    }
+}
+
+@media(max-height: 740px ) {
+    .mrgTop20px{
+        margin-top: 120px;
     }
 }
 
@@ -630,7 +596,28 @@ footer::before {
     }
 }
 
-/* Оптимизация для очень маленьких экранов */
+@media (max-width: 575px) {
+    .nav-section {
+        padding: 15px 20px !important;
+    }
+    
+    .nav-section .navbar-brand {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 493px) {
+    .hidden493{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 479px) {
+    .parallax__title {
+        font-size: 36px;
+    }
+}
+
 @media (max-width: 400px) {
     .content-section {
         padding: 40px 10px !important;
@@ -656,5 +643,17 @@ footer::before {
     
     .section-number {
         max-width: 60px !important;
+    }
+}
+
+@media(max-width: 300px){
+    .zagolovok_s_chertoy_brighter{
+        scale: 0.7;
+    }
+}
+
+@media (max-aspect-ratio: 3/2) {
+    .images-parallax_zemla {
+        background-position: 20% top;
     }
 }
