@@ -28,9 +28,13 @@
         </div>
 
         <nav class="nav-section navbar navbar-expand-lg">
-    <div class="container-fluid flex-column align-items-start">
-        <a class="navbar-brand text-white fs-3 ft-fm_Playfar-display normal-text size150" href="index22.html">MNTN</a>
-        
+        <div class="container-fluid flex-column align-items-start">
+            <a class="navbar-brand text-white fs-3 ft-fm_Playfar-display normal-text size150" href="index22.html">MNTN</a>
+            <div id="name-block" contenteditable="true" style="position:absolute; top:20%; left:50%; transform:translateX(-50%);">
+                <label for="user-name" style="color: #ccc; font-size: 20px; font-family: 'Montserrat', sans-serif;">
+                    <input id="user-name" type="text" placeholder="Как вас зовут?">
+                </label>
+            </div>
         <div class="d-flex w-100 justify-content-between align-items-center">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="index22.html">Equipment</a></li>
@@ -45,6 +49,7 @@
         </div>
     </div>
 </nav>
+        
 
         <div class="content-section">
             <div class="row align-items-center justCenter mrgTop20px">
@@ -228,6 +233,28 @@
 
         applyTheme(saved);
     </script>
+    <script>
+        const inputName = document.getElementById("user-name");
+
+        if (localStorage.getItem("userName")) {
+            inputName.value = "";
+            inputName.placeholder = `Здравствуйте, ${localStorage.getItem("userName")}`;
+        }
+
+        inputName.addEventListener("focus", () => {
+            inputName.placeholder = "";
+        });
+
+        inputName.addEventListener("blur", () => {
+            const name = inputName.value.trim();
+            if (name) {
+            localStorage.setItem("userName", name);
+            inputName.value = "";
+            inputName.placeholder = `Здравствуйте, ${name}`;
+            }
+        });
+        </script>
+
 
 </body>
 </html>
