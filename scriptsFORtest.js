@@ -141,7 +141,7 @@ function finishQuiz() {
       <h3>Ваш результат:</h3>
       <p>Оценка: ${score} / ${questions.length}</p>
       <p>Вы — <strong>${finalType.toUpperCase()}</strong></p>
-      <a href="#" class="btn-highlight" onclick="restartQuiz()">Пройти заново</a>
+      <a href="#" class="btn-highlight" style="text-decoration: none;color: rgb(0, 0, 0)" onclick="restartQuiz()">Пройти заново</a>
     </div>
   `;
   resultBlock.innerHTML = resultHTML;
