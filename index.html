@@ -58,9 +58,10 @@
 
         <div class="side-text ft-fm_Montserrat font-weight_800">
             <span style="display: flex; justify-content: center; align-items: center;">
+                <img id="theme-toggle" src="moon.png" alt="Сменить тему" style="cursor:pointer; width:28px; height:28px; margin-bottom: 20px;">
                 <p>Follow us</p>
                 <a href="#" style="scale: 0.5;"><img src="inst.png" alt="inst"></a>
-                <a href="#" style="scale: 0.5;"><img src="tw.png" alt="tw"></a>
+                <a href="#" style="scale: 0.5;"><img src="tw.png" alt="tw"></a>             
             </span>
         </div>
 
@@ -208,5 +209,25 @@
         });
     });
     </script>
+    <script>
+        const toggleBtn = document.getElementById("theme-toggle");
+
+        function applyTheme(theme) {
+            document.body.classList.toggle("dark", theme === "dark");
+            toggleBtn.src = theme === "dark" ? "solar.png" : "moon.png";
+            localStorage.setItem("theme", theme);
+        }
+
+        toggleBtn.addEventListener("click", () => {
+            const newTheme = document.body.classList.contains("dark") ? "light" : "dark";
+            applyTheme(newTheme);
+        });
+
+        const saved = localStorage.getItem("theme") ||
+            (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+        applyTheme(saved);
+    </script>
+
 </body>
 </html>

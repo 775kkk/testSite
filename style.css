@@ -661,3 +661,46 @@ footer::before {
         background-position: 20% top;
     }
 }
+
+body.dark {
+  color: #ccc;
+}
+
+body.dark .images-parallax_clouds {
+  background-image: url('dark_clouds.png');
+}
+
+body.dark .nav-link,
+body.dark .navbar-brand,
+body.dark .ft-fm_Montserrat,
+body.dark .ft-fm_Playfar-display,
+body.dark .content-section {
+  color: #ccc !important;
+}
+body.dark .zagolovok_s_chertoy_brighter {
+  color: #ffdd44 !important;
+}
+
+body.dark footer {
+  background-color: #0B1D26 !important;
+}
+
+body.dark .progress-nav a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark .progress-nav li.active a {
+  color: #ffdd44;
+}
+
+body.dark .progress-nav li.active a::after {
+  background: #ffdd44;
+}
+
+body.dark .images-parallax_mountains,
+body.dark .images-parallax_zemla {
+  filter: brightness(0.35) contrast(1.1);
+}
+body.dark img {
+  filter: brightness(0.6) contrast(1.1);
+}
