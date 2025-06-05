@@ -13,7 +13,9 @@ html, body {
     color: #fff;
     scroll-behavior: smooth;
 }
-
+body{
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
 .parallax__images {
     position: absolute;
     width: 120%;
@@ -65,6 +67,9 @@ html, body {
     z-index: 3; 
 }
 
+.mobile-gap-top {
+        margin-top: -5px !important;
+    }
 .left_padding_20px{
     margin-left: 100px;
 }
@@ -463,6 +468,7 @@ footer::before {
 
 @media (max-width: 768px) {
     .mobile-gap-top {
+        margin-top: 0px !important;
         display: inline-block;
         margin-bottom: 20px !important;
     }
@@ -688,6 +694,7 @@ footer::before {
 
 body.dark {
   color: #ccc;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body.dark .images-parallax_clouds {
