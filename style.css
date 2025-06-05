@@ -462,6 +462,10 @@ footer::before {
 }
 
 @media (max-width: 768px) {
+    .mobile-gap-top {
+        display: inline-block;
+        margin-bottom: 20px !important;
+    }
     .content-section {
         padding: 100px 30px;
     }
