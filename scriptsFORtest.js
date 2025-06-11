@@ -114,6 +114,9 @@ function renderQuiz() {
 
 function finishQuiz() {
   let score = 0;
+  if (localStorage.getItem("resultTest") != null) {
+    score=localStorage.getItem("resultTest")
+  }
   let types = { "турист": 0, "исследователь": 0, "отдыхающий": 0 };
 
   questions.forEach((q, i) => {
@@ -145,6 +148,8 @@ function finishQuiz() {
     </div>
   `;
   resultBlock.innerHTML = resultHTML;
+  localStorage.setItem("resultTest", score);
+
 }
 
 function restartQuiz() {
@@ -155,4 +160,7 @@ function restartQuiz() {
 
 window.onload = function () {
   renderQuiz();
+  if (localStorage.getItem("resultTest") != null) {
+    finishQuiz()
+  }
 };

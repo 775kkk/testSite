@@ -70,10 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // имя пользователя
   const inputName = document.getElementById("user-name");
-
+  const account = document.getElementById("account")
   if (inputName && localStorage.getItem("userName")) {
     inputName.value = "";
     inputName.placeholder = `Здравствуйте, ${localStorage.getItem("userName")}`;
+    account.textContent=`${localStorage.getItem("userName")}`;
   }
 
   if (inputName) {
