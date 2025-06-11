@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
    <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
     
@@ -44,7 +46,8 @@
                 <li class="nav-item mx-3"><a class="nav-link text-white ft-fm_Montserrat font-weight_800" href="index22.html">Blog</a></li>
             </ul>
             
-            <a class="navbar-brand text-white fs-3 account-link" href="index22.html">
+            <!-- <a class="navbar-brand text-white fs-3 account-link" href="index22.html"> -->
+            <a class="navbar-brand text-white fs-3 account-link" href="#" data-bs-toggle="modal" data-bs-target="#accountModal">
                 <img src="cart.png" class="size150" alt=""> 
                 <span id="account" class="hidden493">Account</span>
             </a>
@@ -159,7 +162,21 @@
         </ul>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+        <div class="modal-header">
+            <h5 class="modal-title" id="accountModalLabel">Личный кабинет</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body"   id="totalExaman">
+           
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

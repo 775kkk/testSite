@@ -91,4 +91,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+
+  
+let score = localStorage.getItem("resultTest");
+let nameUser = localStorage.getItem("name");
+let totalExaman = document.getElementById("totalExaman");
+let finalType = "";
+  if (score >= 7) {
+    finalType = "исследователь";
+  } else if (score >= 4) {
+    finalType = "турист";
+  } else {
+    finalType = "отдыхающий";
+  }
+
+totalExaman.innerHTML = ` <p>Добро пожаловать,${nameUser}! not Examan : ${score}/10. Вы - ${finalType}</p>`
 });
